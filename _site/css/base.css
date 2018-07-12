@@ -15,25 +15,17 @@ a {
   font-family: Helvetica, sans-serif; }
   .sidebar a {
     text-decoration: none; }
-  .sidebar img {
-    padding: 0 3px;
-    border: 0; }
   .sidebar .avatar {
     padding: 0;
-    margin-left: 2px;
     border-radius: 5px; }
   .sidebar .name {
-    text-transform: lowercase;
     margin: 10px 0 10px 0; }
     .sidebar .name #fname {
-      padding-left: 1px;
       font-size: 23px;
-      letter-spacing: 1px;
       color: black; }
     .sidebar .name #lname {
       font-size: 17px;
       font-weight: bold;
-      letter-spacing: 5px;
       color: black; }
   .sidebar .meta {
     margin-left: 4px; }
@@ -47,7 +39,7 @@ a {
   .sidebar .sections {
     margin: 15px 0 0 0; }
     .sidebar .sections a {
-      padding: 3px 0;
+      padding: 0px 0;
       color: black;
       font-weight: bold;
       font-size: 12px;
@@ -59,7 +51,7 @@ a {
       padding: 0; }
     .sidebar .sections li {
       list-style: none;
-      margin-bottom: 7px; }
+      margin-bottom: 0px; }
 
 .content {
   max-width: 650px;

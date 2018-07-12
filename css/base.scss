@@ -22,28 +22,19 @@ a {
   a {
     text-decoration: none;
   }
-  img {
-    padding: 0 3px;
-    border: 0;
-  }
   .avatar {
     padding: 0;
-    margin-left: 2px;
     border-radius: 5px;
   }
   .name {
-    text-transform: lowercase;
     margin: 10px 0 10px 0;
     #fname {
-      padding-left: 1px;
       font-size: 23px;
-      letter-spacing: 1px;
       color: black;
     }
     #lname {
       font-size: 17px;
       font-weight: bold;
-      letter-spacing: 5px;
       color: black;
     }
   }
@@ -63,7 +54,7 @@ a {
   .sections {
     margin: 15px 0 0 0;
     a {
-      padding: 3px 0;
+      padding: 0px 0;
       color: black;
       font-weight: bold;
       font-size: 12px;
@@ -78,7 +69,7 @@ a {
     }
     li {
       list-style: none;
-      margin-bottom: 7px;
+      margin-bottom: 0px;
     }
   }
 }
