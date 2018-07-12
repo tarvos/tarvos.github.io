@@ -1,0 +1,22 @@
+---
+layout: layout
+---
+
+<section class="content">
+  <h1>
+    <a href="{{ page.url }}">{{ page.title }}</a>
+  </h1>
+
+  <section class="byline">
+    {{ page.date | date: "%B %e, %Y" }}
+  </section>
+
+  {{ content }}
+
+  <section class="content">
+    <h3>Bottom text</h3>
+    <section class="copy">
+	    <p>Thanks for reading!  If you'd like to say something, I usually check messages on Signal and iMessage <i>immediately</i>, at [my first name] [at] stanford [dot] edu <i>with a 3-hour latency</i>, and on Grindr <i>with a 72-hour latency</i>.</p>
+    </section>
+  </section>
+</section>
