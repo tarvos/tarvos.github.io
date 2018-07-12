@@ -4,8 +4,8 @@
 @charset "UTF-8";
 
 body {
-  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
-  margin: 0;
+  font-family: 'Gentium Basic', sans-serif;
+  margin: 0 0 0 0;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -15,44 +15,28 @@ a {
 
 .sidebar {
   position: fixed;
-  left: 15px;
+  left: 25px;
   top: 15px;
   width: 100px;
-  font-family: Helvetica, sans-serif;
+  font-family: 'Roboto', sans-serif;
   a {
     text-decoration: none;
   }
-  .avatar {
-    padding: 0;
-    border-radius: 5px;
-  }
   .name {
-    margin: 10px 0 10px 0;
+    text-transform: uppercase;
+    margin: 10px 0px 0px 1px;
     #fname {
-      font-size: 23px;
-      color: black;
-    }
-    #lname {
-      font-size: 17px;
+      font-size: 28px;
       font-weight: bold;
       color: black;
     }
-  }
-  .meta {
-    a {
-      margin-left: 0px;
+    #lname {
+      font-size: 36px;
       color: black;
-      &:hover {
-        color: #227ce8;
-      }
-    }
-    margin-left: 4px;
-    .icon {
-      margin-right: 20px;
     }
   }
   .sections {
-    margin: 15px 0 0 0;
+    margin: 10px 0 0 0;
     a {
       padding: 0px 0;
       color: black;
@@ -64,43 +48,42 @@ a {
       }
     }
     ul {
-      margin: 0;
+      margin: 0 0 0 0;
       padding: 0;
     }
     li {
       list-style: none;
-      margin-bottom: 0px;
+      margin: 0 0 5px 5px;
     }
   }
 }
 
-.content {
-  max-width: 650px;
-  margin-left: 120px;
-  margin-right: 20px;
-  margin-bottom: 50px;
+.main {
+  max-width: 600px;
+  margin-left: 155px;
+  margin-bottom: 20px;
   h1, h2, h3, h4 {
-    color: #333;
-    font-family: "Yanone Kaffeesatz", Helvetica, sans-serif;
-    font-weight: 400;
     a {
       color: #111;
       text-decoration: none;
     }
   }
   h1 {
+    font-family: 'Gentium Basic', serif;
     font-size: 36px;
     margin: 18px 0 5px 0;
   }
   h2 {
-    font-size: 30px;
-    margin-bottom: 15px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 28px;
+    margin-bottom: 5px;
   }
   h3 {
+    font-family: 'Roboto', sans-serif;
     color: #777;
-    font-size: 25px;
-    padding-bottom: 5px;
-    margin-bottom: 10px;
+    font-size: 15px;
+    padding-bottom: 2px;
+    margin-bottom: 2px;
   }
   p {
     font-size: 16px;
@@ -115,58 +98,18 @@ a {
       padding: 2px 3px;
     }
   }
-  img {
-    padding: 3px;
-    border: 1px solid #eeeeee;
-    max-width: 100%;
-  }
-  hr {
-    border: 0;
-    height: 6px;
-    background-image: url("/images/hr.png");
-    background-repeat: repeat-x;
-    margin: 2em 3em;
-  }
-  li {
-    margin-bottom: 10px;
-    line-height: 1.4em;
-  }
-  blockquote {
-    font-style: italic;
-    font-size: 14px;
-    padding: .25em 1em;
-    margin: 1em 1em 0 1em;
-    color: #444;
-    cite {
-      &:before {
-        content: '— ';
-      }
-      display: block;
-      margin-top: .5em;
-      text-align: right;
-      color: #111;
-      font-style: normal;
-    }
-  }
   .byline {
     margin-bottom: 17px;
-    font-family: "Yanone Kaffeesatz", Helvetica, sans-serif;
+    font-family: 'Gentium Basic', serif;
     padding-left: 0px;
     font-size: 17px;
     color: #777;
   }
-  .aside {
-    background-color: #eeeeee;
-    padding: 14px;
-    font-size: 14px;
-    margin: 5px 0 15px 0;
-    font-family: Helvetica, sans-serif;
-    line-height: 1.6em;
-  }
+
   .listing {
     margin: 10px 0 0 0;
     padding: 0;
-    font-family: Helvetica, sans-serif;
+    font-family: 'Gentium Basic', serif;
     ul {
       margin: 0;
       padding: 0;
@@ -188,45 +131,17 @@ a {
         text-decoration: underline;
       }
     }
+
   }
 
-  .meta {
+  .bot {
     margin: 30px 0;
     padding: 10px 0;
-    font-family: Helvetica, sans-serif;
+    font-family: 'Gentium Basic', serif;
     p {
-      line-height: 1.4;
-      font-size: 14px;
+      line-height: 1;
+      font-size: 13px;
       margin-top: 0px;
-    }
-    img {
-      position: relative;
-      float: left;
-      margin-top: 0px;
-      margin-right: 10px;
-      margin-left: -60px;
-      border-radius: 4px;
-    }
-    .copy {
-      padding-left: 60px;
-    }
-    iframe {
-      padding-left: 5px;
-    }
-  }
-
-  .talk-design .color {
-    div {
-      float: left;
-      margin-right: 10px;
-      padding: 5px 15px;
-      border: 1px solid #000;
-      font-family: Helvetica, sans-serif;
-      font-size: 12px;
-      font-weight: bold;
-    }
-    .white {
-      color: #fff;
     }
   }
 

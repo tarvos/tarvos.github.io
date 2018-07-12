@@ -5,16 +5,12 @@
 <body>
   {% include sidebar.html %}
   
-<section class="content">
-  <h1><a href="{{ page.url }}">{{ page.title }}</a></h1>
+<section class="main">
+  <h1>{{ page.title }}</h1>
+	{{ content }}
+	{% include bot.html %}
+</section>
 
-	<section>
-		{{ content }}
-	</section>
-	
-	<section>  
-		{% include bot.html %}
-	</section>
 </body>
 
 </html>
