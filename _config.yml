@@ -4,6 +4,8 @@ markdown: kramdown
 gems:
   - jekyll-sitemap
 
+include: ['_pages']
+
 name: Jarku Tang
 url: https://tarvos.github.io
 instagram: logicku

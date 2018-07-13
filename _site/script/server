@@ -1,2 +1,0 @@
-cd /Users/jarku/Documents/GitHub/tarvos.github.io
-bundle exec jekyll serve --watch

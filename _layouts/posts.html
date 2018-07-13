@@ -3,7 +3,9 @@ layout: inclusive
 ---
 
 <section class="byline">
-    {{ page.date | date: "%B %e, %Y" }}
+	<span>{{ page.date | date: "%A %-d %B %Y" }}</span>
 </section>
 
-{{content}}
+<section class="entry">
+	{{content}}
+</section>

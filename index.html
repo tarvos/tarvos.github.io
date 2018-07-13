@@ -1,14 +1,14 @@
 ---
 layout: inclusive
-title: "Index"
+title: "Homepage @ tarvos.github.io"
 ---
 
-<section class="content">
+<section>
   <ul class="listing">
     {% for post in site.posts %}
       {% unless post.draft %}
       <li>
-        <span>{{ post.date | date: "%B %e, %Y" }}</span> <a href="{{ post.url }}">{{ post.title }}</a>
+        <span>{{ post.date | date: "%A %-d %B %Y" }}</span> <a href="{{ post.url }}">{{ post.title }}</a>
       </li>
       {% endunless %}
     {% endfor %}

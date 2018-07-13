@@ -9,7 +9,8 @@ layout: null
  <link href="{{ site.url }}/"/>
  <updated>{{ site.time | date_to_xmlschema }}</updated>
  <id>{{ site.url }}</id>
- <author>
+ 
+<author>
    <name>{{ site.name }}</name>
  </author>
  

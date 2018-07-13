@@ -1,5 +1,5 @@
 ---
-#
+
 ---
 @charset "UTF-8";
 
@@ -35,7 +35,7 @@ a {
       color: black;
     }
   }
-  .sections {
+  .links {
     margin: 10px 0 0 0;
     a {
       padding: 0px 0;
@@ -60,18 +60,21 @@ a {
 
 .main {
   max-width: 600px;
-  margin-left: 155px;
+  margin-left: 154px;
   margin-bottom: 20px;
-  h1, h2, h3, h4 {
+  h1, h2, h3 {
     a {
       color: #111;
       text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+      }
     }
   }
   h1 {
     font-family: 'Gentium Basic', serif;
     font-size: 36px;
-    margin: 18px 0 5px 0;
+    margin: 18px 0 -8px 0;
   }
   h2 {
     font-family: 'Roboto', sans-serif;
@@ -89,7 +92,7 @@ a {
     font-size: 16px;
     margin-top: 0;
     margin-bottom: 1.2em;
-    line-height: 1.7em;
+    line-height: 1.4;
     code {
       font-size: 12px;
       background-color: #eeeeee;
@@ -98,16 +101,28 @@ a {
       padding: 2px 3px;
     }
   }
+  
+  //mostly for post dates
   .byline {
-    margin-bottom: 17px;
+    span {
+      float: right;
+    }
+    border-top: 1px solid #eee;
     font-family: 'Gentium Basic', serif;
-    padding-left: 0px;
     font-size: 17px;
     color: #777;
   }
 
+  //the real writing goes here
+  .entry {
+    margin-top: 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #eee;
+  }
+
+  //for the index
   .listing {
-    margin: 10px 0 0 0;
+    margin: 20px 0 0 0;
     padding: 0;
     font-family: 'Gentium Basic', serif;
     ul {
@@ -134,14 +149,13 @@ a {
 
   }
 
+  //for bottom text
   .bot {
-    margin: 30px 0;
-    padding: 10px 0;
     font-family: 'Gentium Basic', serif;
     p {
-      line-height: 1;
+      margin: 0 0 4px 0;
+      line-height: 1.2;
       font-size: 13px;
-      margin-top: 0px;
     }
   }
 
