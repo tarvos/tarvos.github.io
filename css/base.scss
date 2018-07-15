@@ -1,105 +1,108 @@
 ---
-
+# Stylesheet for tarvos.github.io
 ---
 @charset "UTF-8";
 
 body {
-  font-family: 'Gentium Basic', sans-serif;
+  font-family: 'Spectral', sans-serif;
+  color: #002b36;  //base03
+  a {
+    color: #586e75 //base01
+  }
   margin: 0 0 0 0;
   -webkit-font-smoothing: antialiased;
 }
-
+  
 a {
-  color: #227ce8;
+  text-decoration: inherit;
+  color: inherit;
+  &:hover {
+    color: #cb4b16;  //orange
+  }
 }
 
 .sidebar {
   position: fixed;
   left: 25px;
   top: 15px;
-  width: 100px;
-  font-family: 'Roboto', sans-serif;
-  a {
-    text-decoration: none;
+  width: 95px;
+  font-family: 'Oxygen Mono', 'Andale Mono', monospace;
+  color: white;
+  .avatar {
+    margin: 0px 0 12px 0;
+    img {
+      width: 100%;
+      height: auto;
+    }
   }
   .name {
+    padding: 5px 0 0 0;
     text-transform: uppercase;
-    margin: 10px 0px 0px 1px;
+    background-color: #002b36;  //base03
+    a {
+      color: inherit;
+      &:hover {
+        color: inherit;
+      }
+    }
     #fname {
-      font-size: 28px;
+      margin: 0 0 0 1px;
+      font-size: 29px;
       font-weight: bold;
-      color: black;
     }
     #lname {
-      font-size: 36px;
-      color: black;
+      margin: 0 0 0 1px;
+      font-size: 38px;
     }
   }
   .links {
-    margin: 10px 0 0 0;
+    margin: 14px 0 0 0;
+    font-family: 'Averia Sans Libre', sans-serif;
+    font-size: 14px;
+    background-color: #002b36;  //base03
     a {
-      padding: 0px 0;
-      color: black;
-      font-weight: bold;
-      font-size: 12px;
-      display: block;
+      color: inherit;
       &:hover {
-        color: #227ce8;
+        color: #cb4b16;  //orange
       }
     }
     ul {
       margin: 0 0 0 0;
-      padding: 0;
+      padding: 0 0 0 0;
     }
     li {
+      color: white;
       list-style: none;
       margin: 0 0 5px 5px;
+      padding: 0 0 0 0;
     }
   }
 }
 
 .main {
-  max-width: 600px;
+  max-width: 700px;
   margin-left: 154px;
   margin-bottom: 20px;
-  h1, h2, h3 {
-    a {
-      color: #111;
-      text-decoration: none;
-      &:hover {
-        text-decoration: underline;
-      }
-    }
-  }
+  font-size: 15px;
   h1 {
-    font-family: 'Gentium Basic', serif;
+    font-family: 'Oxygen Mono', 'Andale Mono', monospace;
     font-size: 36px;
     margin: 18px 0 -8px 0;
   }
   h2 {
-    font-family: 'Roboto', sans-serif;
-    font-size: 28px;
-    margin-bottom: 5px;
+    font-family: 'Averia Sans Libre', sans-serif;
+    font-size: 24px;
+    margin-bottom: 4px;
   }
   h3 {
-    font-family: 'Roboto', sans-serif;
-    color: #777;
-    font-size: 15px;
-    padding-bottom: 2px;
-    margin-bottom: 2px;
+    font-family: 'Averia Sans Libre', sans-serif;
+    font-size: 16px;
+    margin-bottom: 4px;
   }
   p {
-    font-size: 16px;
     margin-top: 0;
-    margin-bottom: 1.2em;
+    margin-bottom: .8em;
     line-height: 1.4;
-    code {
-      font-size: 12px;
-      background-color: #eeeeee;
-      border: 1px solid #777777;
-      border-radius: 3px;
-      padding: 2px 3px;
-    }
   }
   
   //mostly for post dates
@@ -107,55 +110,48 @@ a {
     span {
       float: right;
     }
-    border-top: 1px solid #eee;
-    font-family: 'Gentium Basic', serif;
+    border-top: 1px solid #002b36;  //base03
     font-size: 17px;
-    color: #777;
+    color: #586e75;  //base01
   }
 
   //the real writing goes here
   .entry {
     margin-top: 30px;
     padding-bottom: 30px;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid #002b36;  //base03
   }
 
   //for the index
   .listing {
-    margin: 20px 0 0 0;
+    a { 
+      color: #cb4b16;  //orange
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+    margin: 24px 0 30px 0;
     padding: 0;
-    font-family: 'Gentium Basic', serif;
     ul {
       margin: 0;
       padding: 0;
     }
     li {
-      font-size: 13px;
       list-style: none;
-      padding: 5px 3px;
+      padding: 5px 3px 0 3px;
       margin: 0;
-      color: #777777;
-      border-bottom: 1px solid #eee;
+      color: #586e75;  //base01
+      border-bottom: 1px solid #002b36;  //base03
       span {
         float: right;
       }
     }
-    a {
-      text-decoration: none;
-      &:hover {
-        text-decoration: underline;
-      }
-    }
-
   }
 
   //for bottom text
   .bot {
-    font-family: 'Gentium Basic', serif;
     p {
-      margin: 0 0 4px 0;
-      line-height: 1.2;
-      font-size: 13px;
+      font-size: 14px;
     }
   }
 
