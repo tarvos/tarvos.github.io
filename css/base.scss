@@ -4,20 +4,17 @@
 @charset "UTF-8";
 
 body {
+  -webkit-font-smoothing: antialiased;
+  margin: 0;
+  padding: 0;
   font-family: 'Spectral', sans-serif;
   color: #002b36;  //base03
   a {
-    color: #586e75 //base01
-  }
-  margin: 0 0 0 0;
-  -webkit-font-smoothing: antialiased;
-}
-  
-a {
-  text-decoration: inherit;
-  color: inherit;
-  &:hover {
-    color: #cb4b16;  //orange
+    color: #586e75;  //base01
+    text-decoration: inherit;
+    &:hover {
+      color: #cb4b16;  //orange
+    }
   }
 }
 
@@ -26,33 +23,30 @@ a {
   left: 25px;
   top: 15px;
   width: 95px;
-  font-family: 'Oxygen Mono', 'Andale Mono', monospace;
-  color: white;
+  a {
+    color: white;
+  }
   .avatar {
-    margin: 0px 0 12px 0;
     img {
       width: 100%;
       height: auto;
     }
   }
   .name {
+    margin: 10px 0 0 0;
     padding: 5px 0 0 0;
-    text-transform: uppercase;
     background-color: #002b36;  //base03
-    a {
-      color: inherit;
-      &:hover {
-        color: inherit;
-      }
-    }
     #fname {
-      margin: 0 0 0 1px;
-      font-size: 29px;
+      font-size: 28.5px;
       font-weight: bold;
     }
     #lname {
-      margin: 0 0 0 1px;
       font-size: 38px;
+    }
+    #fname, #lname {
+      margin: 0 0 0 1px;
+      font-family: 'Oxygen Mono', 'Andale Mono', monospace;
+      text-transform: uppercase;
     }
   }
   .links {
@@ -60,18 +54,10 @@ a {
     font-family: 'Averia Sans Libre', sans-serif;
     font-size: 14px;
     background-color: #002b36;  //base03
-    a {
-      color: inherit;
-      &:hover {
-        color: #cb4b16;  //orange
-      }
-    }
     ul {
-      margin: 0 0 0 0;
-      padding: 0 0 0 0;
+      padding: 0 0 .2px 0;
     }
     li {
-      color: white;
       list-style: none;
       margin: 0 0 5px 5px;
       padding: 0 0 0 0;
@@ -81,8 +67,7 @@ a {
 
 .main {
   max-width: 700px;
-  margin-left: 154px;
-  margin-bottom: 20px;
+  margin: 0 30px 20px 154px;
   font-size: 15px;
   h1 {
     font-family: 'Oxygen Mono', 'Andale Mono', monospace;
@@ -97,20 +82,23 @@ a {
   h3 {
     font-family: 'Averia Sans Libre', sans-serif;
     font-size: 16px;
-    margin-bottom: 4px;
+    margin: 9px 0 4px 0;
   }
   p {
     margin-top: 0;
     margin-bottom: .8em;
-    line-height: 1.4;
+    line-height: 1.4em;
   }
-  
-  //mostly for post dates
+  img {
+    pointer-events: none;
+  }
+
+  //dates on posts only
   .byline {
     span {
       float: right;
     }
-    border-top: 1px solid #002b36;  //base03
+    border-top: 0.5px solid #586e75;  //base01
     font-size: 17px;
     color: #586e75;  //base01
   }
@@ -118,13 +106,13 @@ a {
   //the real writing goes here
   .entry {
     margin-top: 30px;
-    padding-bottom: 30px;
-    border-bottom: 1px solid #002b36;  //base03
+    padding-bottom: 35px;
+    border-bottom: 0.5px solid #586e75;  //base01
   }
 
   //for the index
   .listing {
-    a { 
+    a {
       color: #cb4b16;  //orange
       &:hover {
         text-decoration: underline;
@@ -141,7 +129,7 @@ a {
       padding: 5px 3px 0 3px;
       margin: 0;
       color: #586e75;  //base01
-      border-bottom: 1px solid #002b36;  //base03
+      border-bottom: 0.5px solid #586e75;  //base01
       span {
         float: right;
       }
