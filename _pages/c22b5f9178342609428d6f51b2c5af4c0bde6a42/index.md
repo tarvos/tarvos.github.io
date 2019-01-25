@@ -1,6 +1,7 @@
 ---
 layout: inclusive
-title: "Homepage @ tarvos.github.io"
+title: "Personal"
+permalink: "/pages/c22b5f9178342609428d6f51b2c5af4c0bde6a42/"
 ---
 
 <section>
