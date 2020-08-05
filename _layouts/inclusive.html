@@ -1,16 +1,31 @@
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
-{% include top.html %}
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>
+      {% if page.title %}
+        {{ page.title }} |
+      {% endif %}
+      {{ site.name }}
+    </title>
+    <meta name="author" content="{{ site.name }}" />
+    <meta name="description" content="{{ site.description }}" />
+    <link rel="stylesheet" href="/css/base.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" />
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Averia+Sans+Libre|Spectral|Oxygen+Mono" />
+    <link rel="alternate" type="application/rss+xml" href="/atom.xml" />
+  </head>
 
-<body>
-  {% include sidebar.html %}
-  
-<section class="main">
-  <h1>{{ page.title }}</h1>
-	{{ content }}
-	{% include bot.html %}
-</section>
-
-</body>
-
+  <body>
+    <header>
+      {% include sidebar.html %}
+      <h1>{{ page.title }}</h1>
+    </header>
+    <main>
+  	   {{ content }}
+    </main>
+    <footer>
+      {% include bot.html %}
+    </footer>
+  </body>
 </html>

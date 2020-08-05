@@ -8,14 +8,59 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Spectral', sans-serif;
+  font-size: 15px;
   color: #002b36;  //base03
-  a {
-    color: #586e75;  //base01
-    text-decoration: inherit;
-    &:hover {
-      color: #cb4b16;  //orange
-    }
+  max-width: 700px;
+  margin: 0 30px 20px 154px;
+}
+h1 {
+  font-family: 'Oxygen Mono', 'Andale Mono', monospace;
+  font-size: 36px;
+  margin: 18px 0 -8px 0;
+}
+h2 {
+  font-family: 'Averia Sans Libre', sans-serif;
+  font-size: 24px;
+  margin-bottom: 4px;
+}
+h3 {
+  font-family: 'Averia Sans Libre', sans-serif;
+  font-size: 16px;
+  margin: 9px 0 4px 0;
+}
+p {
+  margin-top: 0;
+  margin-bottom: .8em;
+  line-height: 1.4em;
+}
+a {
+  color: #586e75;  //base01
+  text-decoration: inherit;
+  &:hover {
+    color: #cb4b16;  //orange
   }
+}
+img {
+  pointer-events: none;
+  width: 100%;
+  height: auto;
+}
+nav {
+  margin: 14px 0 0 0;
+  font-family: 'Averia Sans Libre', sans-serif;
+  font-size: 14px;
+  background-color: #002b36;  //base03
+  ul {
+    padding: 0 0 .2px 0;
+  }
+  li {
+    list-style: none;
+    margin: 0 0 5px 5px;
+    padding: 0 0 0 0;
+  }
+}
+footer {
+  font-size: 14px;
 }
 
 .sidebar {
@@ -25,14 +70,18 @@ body {
   width: 95px;
   a {
     color: white;
+    text-decoration: inherit;
+    &:hover {
+      color: #cb4b16;  //orange
+    }
   }
-  .avatar {
+  #avatar {
     img {
       width: 100%;
       height: auto;
     }
   }
-  .name {
+  #name {
     margin: 10px 0 0 0;
     padding: 5px 0 0 0;
     background-color: #002b36;  //base03
@@ -49,100 +98,47 @@ body {
       text-transform: uppercase;
     }
   }
-  .links {
-    margin: 14px 0 0 0;
-    font-family: 'Averia Sans Libre', sans-serif;
-    font-size: 14px;
-    background-color: #002b36;  //base03
-    ul {
-      padding: 0 0 .2px 0;
-    }
-    li {
-      list-style: none;
-      margin: 0 0 5px 5px;
-      padding: 0 0 0 0;
-    }
-  }
 }
 
-.main {
-  max-width: 700px;
-  margin: 0 30px 20px 154px;
-  font-size: 15px;
-  h1 {
-    font-family: 'Oxygen Mono', 'Andale Mono', monospace;
-    font-size: 36px;
-    margin: 18px 0 -8px 0;
+//dates on posts only
+.byline {
+  span {
+    float: right;
   }
-  h2 {
-    font-family: 'Averia Sans Libre', sans-serif;
-    font-size: 24px;
-    margin-bottom: 4px;
-  }
-  h3 {
-    font-family: 'Averia Sans Libre', sans-serif;
-    font-size: 16px;
-    margin: 9px 0 4px 0;
-  }
-  p {
-    margin-top: 0;
-    margin-bottom: .8em;
-    line-height: 1.4em;
-  }
-  img {
-    pointer-events: none;
-    width: 100%;
-    height: auto;
-  }
+  border-top: 0.5px solid #586e75;  //base01
+  font-size: 17px;
+  color: #586e75;  //base01
+}
 
-  //dates on posts only
-  .byline {
+//the real writing goes here
+.entry {
+  margin-top: 30px;
+  padding-bottom: 35px;
+  border-bottom: 0.5px solid #586e75;  //base01
+}
+
+//for the index
+.listing {
+  a {
+    color: #cb4b16;  //orange
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  margin: 24px 0 30px 0;
+  padding: 0;
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+  li {
+    list-style: none;
+    padding: 5px 3px 0 3px;
+    margin: 0;
+    color: #586e75;  //base01
+    border-bottom: 0.5px solid #586e75;  //base01
     span {
       float: right;
     }
-    border-top: 0.5px solid #586e75;  //base01
-    font-size: 17px;
-    color: #586e75;  //base01
   }
-
-  //the real writing goes here
-  .entry {
-    margin-top: 30px;
-    padding-bottom: 35px;
-    border-bottom: 0.5px solid #586e75;  //base01
-  }
-
-  //for the index
-  .listing {
-    a {
-      color: #cb4b16;  //orange
-      &:hover {
-        text-decoration: underline;
-      }
-    }
-    margin: 24px 0 30px 0;
-    padding: 0;
-    ul {
-      margin: 0;
-      padding: 0;
-    }
-    li {
-      list-style: none;
-      padding: 5px 3px 0 3px;
-      margin: 0;
-      color: #586e75;  //base01
-      border-bottom: 0.5px solid #586e75;  //base01
-      span {
-        float: right;
-      }
-    }
-  }
-
-  //for bottom text
-  .bot {
-    p {
-      font-size: 14px;
-    }
-  }
-
 }
